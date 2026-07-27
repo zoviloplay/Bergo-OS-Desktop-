@@ -1,1 +1,6 @@
-
+{
+    "update_server": "local",
+    "last_check": "never",
+    "allow_beta_updates": false,
+    "current_version": "0.1.0"
+}
