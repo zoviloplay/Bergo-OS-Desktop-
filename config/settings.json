@@ -1,1 +1,8 @@
-
+{
+    "os_name": "Bergo OS",
+    "version": "0.1.0",
+    "developer": "zoviloplay",
+    "build": "alpha",
+    "auto_update": false,
+    "first_boot": true
+}
