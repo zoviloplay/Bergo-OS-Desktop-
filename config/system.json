@@ -1,1 +1,7 @@
-
+{
+    "boot_mode": "normal",
+    "kernel": "bergo-kernel-0.1",
+    "gpu_acceleration": true,
+    "safe_mode": false,
+    "hardware_check": true
+}
