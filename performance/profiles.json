@@ -1,1 +1,17 @@
-
+{
+  "gaming": {
+    "cpu_clock": "max",
+    "gpu_clock_offset": 150,
+    "vram_clock_offset": 200
+  },
+  "streaming": {
+    "cpu_clock": "medium",
+    "gpu_clock_offset": 50,
+    "vram_clock_offset": 0
+  },
+  "silent": {
+    "cpu_clock": "low",
+    "gpu_clock_offset": 0,
+    "vram_clock_offset": 0
+  }
+}
