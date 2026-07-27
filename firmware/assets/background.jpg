@@ -1,1 +1,16 @@
+# desktop.py – FAST Version
 
+import os
+import time
+
+def start_desktop():
+    os.system("clear")
+    print("🖥️ Lade Desktop...")
+    time.sleep(1)
+    print("✅ Bergo Desktop aktiv – bereit für KI, Cluster und Performance.")
+    print("Hintergrund: Bergo_Landscape.jpg")
+    print("Taskbar: unten, transparent, Glow-Effekt aktiv.")
+    print("Start-Button: Bergo-Logo (weiß, Glow bei Hover).")
+
+if __name__ == "__main__":
+    start_desktop()
