@@ -1,1 +1,7 @@
-
+{
+    "theme": "dark",
+    "accent_color": "#4A90E2",
+    "taskbar": true,
+    "clock": true,
+    "window_border": true
+}
