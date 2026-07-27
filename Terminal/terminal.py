@@ -4,5 +4,10 @@ def start():
     print("Bergo Terminal gestartet. Tippe 'help' für Befehle.")
 
     while True:
-        user_input = input("> ")
-        parser.handle(user_input)
+        try:
+            user_input = input("> ")
+            parser.handle(user_input)
+
+        except KeyboardInterrupt:
+            print("\nBefehl abgebrochen (CTRL + C).")
+            continue
