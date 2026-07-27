@@ -1,1 +1,20 @@
-
+{
+  "eco": {
+    "cpu_limit": 60,
+    "gpu_limit": 50,
+    "temp_limit": 70,
+    "description": "Energiesparmodus – leise, kühl, ideal für Dauerbetrieb."
+  },
+  "normal": {
+    "cpu_limit": 85,
+    "gpu_limit": 80,
+    "temp_limit": 79,
+    "description": "Standardmodus – ausgewogen zwischen Leistung und Sicherheit."
+  },
+  "boost": {
+    "cpu_limit": 100,
+    "gpu_limit": 100,
+    "temp_limit": 85,
+    "description": "Maximale Leistung – für KI, Streaming und Cluster‑Power."
+  }
+}
