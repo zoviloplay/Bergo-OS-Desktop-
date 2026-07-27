@@ -24,5 +24,4 @@ print("🔵 Aktiviere Bluetooth...")
 os.system("sudo rfkill unblock bluetooth")
 os.system("sudo systemctl start bluetooth")
 print("✅ Bluetooth aktiviert.\n")
-
 print("🎉 Alle Apps installiert und Verbindungen aktiviert! Desktop wird vorbereitet...")
