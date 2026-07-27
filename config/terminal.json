@@ -1,1 +1,6 @@
-
+{
+    "prompt": "> ",
+    "history_limit": 200,
+    "allow_ctrl_c": true,
+    "color": "green"
+}
