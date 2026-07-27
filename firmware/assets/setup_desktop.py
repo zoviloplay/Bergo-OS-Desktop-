@@ -1,5 +1,5 @@
-# instalire apps aus pi apps
-   import os
+# installiere apps aus pi apps + aktiviere WLAN & Bluetooth
+import os
 
 apps = [
     "Nemo",
@@ -9,8 +9,20 @@ apps = [
 ]
 
 for app in apps:
-    print(f"⬇️ Installiere {app}...")
+    print(f"🧩 Installiere {app}...")
     os.system(f'~/pi-apps/manage install "{app}"')
-    print(f"✔️ {app} installiert.\n")
+    print(f"✅ {app} installiert.\n")
 
-print("🎉 Alle Apps installiert! Desktop wird vorbereitet...")
+# WLAN aktivieren
+print("📶 Aktiviere WLAN...")
+os.system("sudo rfkill unblock wifi")
+os.system("sudo ifconfig wlan0 up")
+print("✅ WLAN aktiviert.\n")
+
+# Bluetooth aktivieren
+print("🔵 Aktiviere Bluetooth...")
+os.system("sudo rfkill unblock bluetooth")
+os.system("sudo systemctl start bluetooth")
+print("✅ Bluetooth aktiviert.\n")
+
+print("🎉 Alle Apps installiert und Verbindungen aktiviert! Desktop wird vorbereitet...")
