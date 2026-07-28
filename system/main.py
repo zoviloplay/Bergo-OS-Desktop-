@@ -1,4 +1,24 @@
+# Bergo OS Main Starter – lädt ALLE Kernmodule
+import os
+import time
 
+def start_kernel():
+    print("🧠 Starte Kernel...")
+    os.system("python3 /system/kernel_loader.py")
+
+def start_input():
+    print("🖱️ Lade Maus & Tastatur...")
+    os.system("python3 /system/input_loader.py")
+
+def start_network():
+    print("🌐 Starte Internet-Modul...")
+    os.system("python3 /system/network_manager.py")
+
+def start_gpu():
+    print("🎮 Initialisiere GPU...")
+    os.system("python3 /system/gpu_loader.py")
+
+def start_hardware_check():
     print("🔍 Prüfe Hardware...")
     os.system("python3 /system/hardware_check.py")
 
@@ -15,7 +35,8 @@ def main_start():
     time.sleep(1)
 
     start_kernel()
-    start_drivers()
+    start_input()       # NEU – Maus + Tastatur
+    start_network()     # NEU – Internet
     start_gpu()
     start_hardware_check()
     start_boot_sequence()
