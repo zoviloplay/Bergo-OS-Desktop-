@@ -1,20 +1,4 @@
-# Bergo OS Main Starter – startet alle Kernmodule
-import os
-import time
 
-def start_kernel():
-    print("🧠 Starte Kernel...")
-    os.system("python3 /system/kernel_loader.py")
-
-def start_drivers():
-    print("⚙️ Lade Treiber...")
-    os.system("python3 /system/drivers.py")
-
-def start_gpu():
-    print("🎮 Initialisiere GPU...")
-    os.system("python3 /system/gpu_loader.py")
-
-def start_hardware_check():
     print("🔍 Prüfe Hardware...")
     os.system("python3 /system/hardware_check.py")
 
